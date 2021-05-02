@@ -8,6 +8,6 @@ while True:
     for i in taa:
         filee = open('list_Telegram_Id.txt','r').readlines()
         for idd in filee:
-            url = f'https://api.telegram.org/bot1630827457:AAHxyYsnRfUIM7XMcU3cvV8_EkE6pB2mWi8/sendMessage?chat_id={idd.strip()}&text={i}'
+            url = f'https://api.telegram.org/bot{token}/sendMessage?chat_id={idd.strip()}&text={i}'
             r = requests.get(url)
         time.sleep(600)
